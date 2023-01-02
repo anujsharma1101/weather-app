@@ -1,6 +1,6 @@
 <h1>Weather App using openWeatherMap API</h1>
 <br />
-<img src="https://grist.org/wp-content/uploads/2013/06/supercell1.gif" />
+<img width="100%" src="https://grist.org/wp-content/uploads/2013/06/supercell1.gif" />
 <p>This is a academic project to learn more about HTML, CSS, javaScript and APIs and how to use all these technologies collectively to get the required response from the API and use the data and show it to the user.</p>
 <ul>
   <p>Technologies used in this project</p>
