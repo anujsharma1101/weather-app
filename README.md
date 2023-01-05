@@ -14,7 +14,7 @@
 <br />
 <br />
 
-<h3>Research and created by :-</h3>
+<h3>Researched and created by :-</h3>
 <h4>Anuj Sharma</h4>
 <h5><a href="mailto:21001003015@jcboseust.ac.in">Email</a></h5><br />
 <h4>Kartik Chauhan</h4>
