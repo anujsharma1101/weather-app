@@ -12,40 +12,47 @@ body {
     background: radial-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.8));
     backdrop-filter: blur(20px);
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
 }
 
 .search {
-    display: flex;
-    width: 300px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.label-bar {
+    color: rgba(136, 131, 214, 0.8);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.search-bar {
+    height: 40px;
+    width: 50%;
+    background-color: rgba(129, 129, 129, 0.2);
     margin-top: 20px;
-    margin-bottom: 20px;
-    align-items: center;
+    border: 0;
+    margin-right: 20px;
+    border-radius: 30px;
+    inset: 20px;
     text-align: center;
 }
 
-.btn-outline-dark {
-    width: 50px;
-    border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.3);
+.__searchButton {
+    border-radius: 40px;
+    height: 43px;
+    width: 43px;
+    background-color: rgba(129, 129, 129, 0.2);
     border: 0;
-    margin-left: 20px
 }
 
 .weather {
-    margin-left: -150px;
+    text-align: left;
+    margin-left: 50px;
 }
 
 .weather.loading {
     visibility: hidden;
-    margin-top: -165px;
-}
-
-.form-control {
-    background-color: rgba(255, 255, 255, 0.3);
-    font-weight: bold;
-    border: 0;
+    margin-top: -200px;
 }
 
 .temp {
@@ -57,14 +64,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: left;
-    margin-top: -20px;
-    margin-bottom: -10px
 }
 
 .desc2 {
     display: flex;
     justify-content: right;
-    margin-top: -50px;
 }
 
 .description {

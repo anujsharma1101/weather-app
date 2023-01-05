@@ -18,21 +18,21 @@ let key={
         document.querySelector(".temp").innerText = Math.round(temp)+" °C";
         document.querySelector(".description").innerText = description;
         document.querySelector(".humidity").innerText ="Humidity: " + humidity+"%";
-        document.querySelector(".wind").innerText = speed+"Km/hr";
+        document.querySelector(".wind").innerText = "Wind: "+speed+"Km/hr";
         document.querySelector(".icon").src="http://openweathermap.com/img/wn/"+icon+"@2x.png";
         document.body.style.backgroundImage = "url('https://source.unsplash.com/1920x1080/?" + name + "')";
         document.querySelector(".weather").classList.remove("loading");
     },
     search: function () {
-        this.get_Weather(document.querySelector(".form-control").value);
+        this.get_Weather(document.querySelector(".search-bar").value);
     }
 };
 
-document.querySelector(".btn").addEventListener("click", function () {
+document.querySelector(".__searchButton").addEventListener("click", function () {
     key.search(); 
 });
 
-document.querySelector(".form-control").addEventListener("keyup", function (event) {
+document.querySelector(".search-bar").addEventListener("keyup", function (event) {
     if( event.key == "Enter" ){
         key.search();
     }
