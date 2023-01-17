@@ -3,15 +3,21 @@ body {
     justify-content: center;
     height: 100vh;
     align-items: center;
+    transition:3000ms linear;
 }
 
 .card {
-    width: 500px;
+    width: 600px;
     border-radius: 30px;
     color: white;
     background: radial-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.8));
     backdrop-filter: blur(20px);
     overflow: hidden;
+    justify-content: center;
+}
+
+.ren{
+    display: flex;
 }
 
 .search {
@@ -28,13 +34,23 @@ body {
 .search-bar {
     height: 40px;
     width: 50%;
-    background-color: rgba(129, 129, 129, 0.2);
+    background-color: rgba(55, 55, 55, 0.45);
     margin-top: 20px;
     border: 0;
     margin-right: 20px;
     border-radius: 30px;
     inset: 20px;
     text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    transition: 0.2s;
+    border: 1px solid rgba(255, 255, 255);
+}
+
+.search-bar:hover{
+    background-color: white;
+    color: black;
+    transition: 0.2s;
 }
 
 .__searchButton {
@@ -43,21 +59,45 @@ body {
     width: 43px;
     background-color: rgba(129, 129, 129, 0.2);
     border: 0;
+    transition: 0.5s;
 }
+
+.__searchButton:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+
 
 .weather {
     text-align: left;
     margin-left: 50px;
+    transition: all 0.5s linear;
+    word-wrap: break-word;
 }
 
 .weather.loading {
     visibility: hidden;
-    margin-top: -200px;
+    margin-top: -170px;
+    word-wrap: break-word;
 }
 
 .temp {
+    z-index: -200px;
+    position: relative;
+    width: 500px;
+    font-family:cursive;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 120px;
+    transition: all 0.5s linear;
+}
+
+.temp:hover{
+    transition: all 0.5s linear;
+    color: rgba(136, 131, 214, 0.8);
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .desc {
@@ -66,21 +106,20 @@ body {
     justify-content: left;
 }
 
-.desc2 {
-    display: flex;
-    justify-content: right;
-}
-
 .description {
-    font-size: 25px;
+    margin-top: -70px;
+    font-size: 30px;
+    font-family: cursive;
 }
 
 .icon {
+    margin-top: -60px;
     height: 70px;
 }
 
 .city {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.794);
+    font-family: cursive;
 }
 
 .humidity {
@@ -96,4 +135,8 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 5px;
     margin-bottom: 20px;  
+}
+
+.humi{
+    color: rgba(136, 131, 214, 0.8)
 }

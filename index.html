@@ -9,6 +9,7 @@
     <link rel="icon" href="./icon.png">
     <link rel="stylesheet" href="./style.css">
     <script src="./weather.js" defer></script>
+    <script src="./node_modules/chart.js/" defer></script>
 </head>
 
 <body>
@@ -31,6 +32,7 @@
                 </svg>
             </button>
         </div>
+        <div class="ren">
         <div class="weather loading">
             <h2 class="city">Weather in Faridabad</h2>
             <div class="temp">14°C</div>
@@ -40,6 +42,8 @@
             </div>
             <div class="humidity">60%</div>
             <div class="wind">100km/hr</div>
+            <div id="map"></div>
+        </div>
         </div>
     </div>
 </body>
