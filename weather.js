@@ -27,15 +27,12 @@ let key={
         this.get_Weather(document.querySelector(".search-bar").value);
     }
 };
-
 document.querySelector(".__searchButton").addEventListener("click", function () {
     key.search(); 
 });
-
 document.querySelector(".search-bar").addEventListener("keyup", function (event) {
     if( event.key == "Enter" ){
         key.search();
     }
 });
-
 window.onload(document.body.style.backgroundImage = "url('https://source.unsplash.com/1920x1080/?landscape)");
