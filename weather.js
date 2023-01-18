@@ -15,7 +15,6 @@ let key={
         const { temp, humidity } = listing.main;
         const { speed } = listing.wind;
 
-        let graphval = [];
 
         // console.log( name, description, temp, humidity, speed); 
         document.querySelector(".city").innerText = "Weather in "+ name;
@@ -26,16 +25,6 @@ let key={
         document.querySelector(".icon").src="http://openweathermap.com/img/wn/"+icon+"@2x.png";
         document.body.style.backgroundImage = "url('https://source.unsplash.com/1920x1080/?" + name + "')";
         document.querySelector(".weather").classList.remove("loading");
-
-
-        graphval[0] = data.list[0].main.temp;
-        graphval[1] = data.list[12].main.temp;
-        graphval[2] = data.list[28].main.temp;
-        
-
-        for(var i=0;i<3;i++){
-            document.getElementById('graph').innerHTML=`<div id="div${i}">${graphval[i]}</div>`;
-        }
     },
 
     search: function () {
